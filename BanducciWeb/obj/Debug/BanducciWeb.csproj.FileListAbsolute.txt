@@ -80,3 +80,9 @@ c:\users\jennifer\desktop\Banducci_N_Tier\BanducciWeb\bin\Microsoft.Owin.Securit
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciWeb\obj\Debug\BanducciWeb.csprojResolveAssemblyReference.cache
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciWeb\obj\Debug\BanducciWeb.dll
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciWeb\obj\Debug\BanducciWeb.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciBusiness.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciModels.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciUtilities.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciBusiness.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciModels.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciUtilities.pdb

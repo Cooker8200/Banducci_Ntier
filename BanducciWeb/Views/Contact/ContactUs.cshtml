@@ -1,0 +1,62 @@
+﻿@model BanducciModels.ContactForm
+@{
+    ViewBag.Title = "ContactUs";
+}
+
+<h2>Contact Us</h2>
+
+<div id="contact">
+
+    <div>
+        @using (Html.BeginForm("SendContact", "Contact", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        { @Html.AntiForgeryToken()
+            <h4>Send your comments.</h4>
+            <hr />
+            <div class="form-group">
+                @Html.LabelFor(m => m.name, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.name)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.email, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.email)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.message, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.message, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.message)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" class="btn btn-default" value="Send" />
+                </div>
+            </div> }
+    </div>
+
+    <hr />
+
+    <h3>Send a letter or call us.</h3>
+    <div>
+        <address>
+            1001 Craig Road<br />
+            Suite 485<br />
+            Creve Couer MO 63146<br />
+            <abbr title="Phone">P:</abbr>
+            314.993.9949
+        </address>
+    </div>
+    <hr />
+    <h3>Employment Opproritunities</h3>
+    <p>We are always looking for great people to join our team.  Find ways to start a rewarding carrer.</p>
+</div>
+
+<script>
+    document.GetElementById('body').style.background = 'none';
+</script>

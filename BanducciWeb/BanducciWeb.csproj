@@ -275,14 +275,16 @@
     <Content Include="Views\Home\_BanducciStory.cshtml" />
     <Content Include="Views\Home\_LeadershipTeam.cshtml" />
     <Content Include="Views\Home\_Partnerships.cshtml" />
+    <Content Include="Views\Contact\ContactUs.cshtml" />
+    <Content Include="Views\Contact\_Sent.cshtml" />
+    <Content Include="Views\Locations\LocationsHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\Main\" />
     <Folder Include="Images\Profile_Pictures\" />
     <Folder Include="Images\Promotions_Page\" />
-    <Folder Include="Views\Contact\" />
-    <Folder Include="Views\Locations\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -291,6 +293,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BanducciBusiness\BanducciBusiness.csproj">
+      <Project>{7085f338-d50e-4d5a-a063-3e10abcdf799}</Project>
+      <Name>BanducciBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BanducciModels\BanducciModels.csproj">
+      <Project>{0b383a26-da7b-43e2-8d2e-c30552e5348c}</Project>
+      <Name>BanducciModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

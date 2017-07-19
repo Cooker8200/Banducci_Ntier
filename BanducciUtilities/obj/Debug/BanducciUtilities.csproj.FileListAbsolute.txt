@@ -3,3 +3,5 @@ c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\bin\Debug\BanducciUt
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.csprojResolveAssemblyReference.cache
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.dll
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciUtilities\bin\Debug\BanducciModels.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciUtilities\bin\Debug\BanducciModels.pdb

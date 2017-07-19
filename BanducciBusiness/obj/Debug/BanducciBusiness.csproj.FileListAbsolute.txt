@@ -3,3 +3,7 @@ c:\users\jennifer\desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciBus
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciBusiness\obj\Debug\BanducciBusiness.csprojResolveAssemblyReference.cache
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciBusiness\obj\Debug\BanducciBusiness.dll
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciBusiness\obj\Debug\BanducciBusiness.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciModels.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciUtilities.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciModels.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciUtilities.pdb

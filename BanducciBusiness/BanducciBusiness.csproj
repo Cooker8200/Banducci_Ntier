@@ -40,7 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BanducciModels\BanducciModels.csproj">
+      <Project>{0b383a26-da7b-43e2-8d2e-c30552e5348c}</Project>
+      <Name>BanducciModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BanducciUtilities\BanducciUtilities.csproj">
+      <Project>{af4fe31c-8cc0-4628-a2e5-dd23592404bd}</Project>
+      <Name>BanducciUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
