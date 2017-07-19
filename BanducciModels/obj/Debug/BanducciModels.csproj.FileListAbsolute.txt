@@ -1,0 +1,5 @@
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciModels\bin\Debug\BanducciModels.dll
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciModels\bin\Debug\BanducciModels.pdb
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciModels\obj\Debug\BanducciModels.csprojResolveAssemblyReference.cache
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciModels\obj\Debug\BanducciModels.dll
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciModels\obj\Debug\BanducciModels.pdb

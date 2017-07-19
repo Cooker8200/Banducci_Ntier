@@ -1,0 +1,28 @@
+﻿
+#itunesapp, #googleplayapp {
+    background: black;
+    border-radius: 2em;
+}
+
+#itunesapp:hover, #googleplayapp:hover {
+    outline: none;
+    background: black;
+    height: 3em;
+    border-radius: 2em;
+}
+
+#header_pic {
+    margin-left: -5%;
+    height: 5em;
+    float: left;
+}
+
+.top_head {
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.centered_p {
+    text-align: center;
+}

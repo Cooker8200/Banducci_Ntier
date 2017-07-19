@@ -1,0 +1,5 @@
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\bin\Debug\BanducciUtilities.dll
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\bin\Debug\BanducciUtilities.pdb
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.csprojResolveAssemblyReference.cache
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.dll
+c:\users\jennifer\desktop\Banducci_N_Tier\BanducciUtilities\obj\Debug\BanducciUtilities.pdb
