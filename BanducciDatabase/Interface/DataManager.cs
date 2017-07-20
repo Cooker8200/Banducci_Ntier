@@ -13,8 +13,7 @@ namespace BanducciDatabase.Interface
 
         public void Create(Locations locations)
         {
-            db.Locations.Add(locations);  //todo BanducciDatabase.Locations: : EntityType 'Locations' has no key defined. Define the key for this EntityType.
-                                          //todo Locations: EntityType: EntitySet 'Locations' is based on type 'Locations' that has no keys defined.
+            db.Locations.Add(locations);  
             db.SaveChanges();
         }
 

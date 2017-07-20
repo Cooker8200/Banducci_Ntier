@@ -10,7 +10,7 @@ namespace BanducciDatabase
 {
     public class DataContext : DbContext
     {
-        public  DataContext() : base("name=BanducciContext")
+        public  DataContext() : base ("name=BanducciContext")
         {
 
         }
