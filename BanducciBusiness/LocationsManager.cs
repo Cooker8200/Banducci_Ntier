@@ -12,12 +12,12 @@ namespace BanducciBusiness
     {
         public LocationsManager()
         {
-            _data = new LocationsDBManager();
+            _data = new BanducciDatabase.Interface.DataManager();
         }
 
-        private LocationsDBManager _data;
+        private BanducciDatabase.Interface.DataManager _data;
 
-        public void Create(BanducciModels.Locations model)
+        public void Create(Locations model)
         {
             _data.Create(model);
         }

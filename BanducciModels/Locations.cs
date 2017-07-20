@@ -9,6 +9,8 @@ namespace BanducciModels
 {
     public class Locations
     {
+            [Key]
+            public int id { get; set; }
             [Required]
             [Display(Name = "Store Number")]
             public int storeid { get; set; }

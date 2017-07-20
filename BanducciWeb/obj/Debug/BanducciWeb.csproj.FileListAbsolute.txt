@@ -84,3 +84,5 @@ C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciBusiness.dll
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciModels.dll
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciBusiness.pdb
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciModels.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciDatabase.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciWeb\bin\BanducciDatabase.pdb

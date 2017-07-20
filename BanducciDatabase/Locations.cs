@@ -9,7 +9,6 @@ namespace BanducciDatabase
 {
     public class Locations
     {
-        [Key]
         [Required]
         [Display(Name = "Store Number")]
         public int storeid { get; set; }

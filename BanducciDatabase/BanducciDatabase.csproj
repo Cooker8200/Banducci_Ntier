@@ -51,50 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\BanducciDataModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BanducciDataModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\BanducciDataModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BanducciDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\BanducciDataModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BanducciDataModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Location.cs">
-      <DependentUpon>BanducciDataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Locations.cs" />
-    <Compile Include="LocationsDBManager.cs" />
+    <Compile Include="DataContext.cs" />
+    <Compile Include="Interface\DataManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="Data\BanducciDataModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BanducciDataModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Data\BanducciDataModel.edmx.diagram">
-      <DependentUpon>BanducciDataModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\BanducciDataModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BanducciDataModel.edmx</DependentUpon>
-      <LastGenOutput>BanducciDataModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\BanducciDataModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BanducciDataModel.edmx</DependentUpon>
-      <LastGenOutput>BanducciDataModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
