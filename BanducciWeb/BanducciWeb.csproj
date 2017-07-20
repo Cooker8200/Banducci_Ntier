@@ -278,6 +278,7 @@
     <Content Include="Views\Contact\ContactUs.cshtml" />
     <Content Include="Views\Contact\_Sent.cshtml" />
     <Content Include="Views\Locations\LocationsHome.cshtml" />
+    <Content Include="Views\Locations\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

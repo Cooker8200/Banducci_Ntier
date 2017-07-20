@@ -3,3 +3,10 @@ c:\users\jennifer\desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\BanducciDat
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciDatabase\obj\Debug\BanducciDatabase.csprojResolveAssemblyReference.cache
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciDatabase\obj\Debug\BanducciDatabase.dll
 c:\users\jennifer\desktop\Banducci_N_Tier\BanducciDatabase\obj\Debug\BanducciDatabase.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\BanducciDatabase.dll.config
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\EntityFramework.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\EntityFramework.xml
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\BanducciModels.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciDatabase\bin\Debug\BanducciModels.pdb

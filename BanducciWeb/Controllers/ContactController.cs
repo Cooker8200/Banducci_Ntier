@@ -13,10 +13,10 @@ namespace BanducciWeb.Controllers
     {
         public ContactController()
         {
-            _email = new Contact();
+            _email = new ContactManager();
         }
 
-        private Contact _email;
+        private ContactManager _email;
 
         public ActionResult ContactHome()
         {

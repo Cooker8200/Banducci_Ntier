@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact.cs" />
+    <Compile Include="ContactManager.cs" />
+    <Compile Include="LocationsManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BanducciDatabase\BanducciDatabase.csproj">
+      <Project>{d5e877b6-f9a6-48c8-a88e-a48b0a3ad718}</Project>
+      <Name>BanducciDatabase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BanducciModels\BanducciModels.csproj">
       <Project>{0b383a26-da7b-43e2-8d2e-c30552e5348c}</Project>
       <Name>BanducciModels</Name>

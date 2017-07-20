@@ -1,7 +1,123 @@
-﻿
+﻿@*@model IEnumerable<>;
 @{
     ViewBag.Title = "LocationsHome";
 }
 
-<h2>LocationsHome</h2>
+<h2 class="top_head">Our Locations</h2>
+<hr />
+
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table" id="locationtable">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.storeid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zipcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.storeid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.city)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.zipcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.storeid }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.storeid }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.storeid })
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+
+else
+{
+    <table class="table" id="locationtable">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.storeid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zipcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.storeid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.city)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.zipcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.storeid })
+                </td>
+            </tr>
+        }
+    </table>
+
+}*@
 

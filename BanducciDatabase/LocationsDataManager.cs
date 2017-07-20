@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BanducciDatabase
 {
-    class DataManager
+    public class LocationsDataManager
     {
+        private BanducciContext db = new BanducciContext();
+        public Action getData()
+        {
+            
+        }
     }
 }

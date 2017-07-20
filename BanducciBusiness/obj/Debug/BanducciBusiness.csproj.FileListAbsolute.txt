@@ -7,3 +7,7 @@ C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciMod
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciUtilities.dll
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciModels.pdb
 C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciUtilities.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciDatabase.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\BanducciDatabase.pdb
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\EntityFramework.dll
+C:\Users\Jennifer\Desktop\Banducci_N_Tier\BanducciBusiness\bin\Debug\EntityFramework.xml
