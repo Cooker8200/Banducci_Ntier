@@ -12,17 +12,22 @@ namespace BanducciWeb.Controllers
     {
         public LocationsController()
         {
-            _locations = new LocationsManager();
+            _locationsManager = new LocationsManager();
         }
 
-        private LocationsManager _locations;
+        private LocationsManager _locationsManager;
 
-        public ActionResult Index()
+        public ActionResult LocationsHome()
         {
-            return View("LocationsHome");
+            return View();  //todo
         }
 
         public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult Delete()
         {
             return View();
         }
@@ -31,7 +36,45 @@ namespace BanducciWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                _locations.Create(model);
+                _locationsManager.Create(model);
+            }
+
+            return RedirectToAction("Create");
+        }
+
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Create");  //todo change
+            }
+
+            Locations locations = _locationsManager.GetId(id);
+
+            if (locations == null)
+            {
+                return RedirectToAction("Create");
+            }
+
+            return View(locations);
+
+        }
+
+        public ActionResult EditStore(Locations model)
+        {
+            if (ModelState.IsValid)
+            {
+                _locationsManager.EditStore(model);
+            }
+
+            return RedirectToAction("Create");
+        }
+
+        public ActionResult DeleteStore(Locations model)
+        {
+            if (ModelState.IsValid)
+            {
+                _locationsManager.Delete(model);
             }
 
             return RedirectToAction("Create");
