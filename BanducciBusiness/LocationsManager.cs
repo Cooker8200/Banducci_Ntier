@@ -18,9 +18,10 @@ namespace BanducciBusiness
 
         private BanducciDatabase.Interface.DataManager _data;
 
-        public void List()
+        public Locations List()
         {
-            _data.List();
+            var LocManagerDbList = _data.List();
+            return LocManagerDbList;
         }
 
         public void Create(Locations model)
@@ -34,9 +35,10 @@ namespace BanducciBusiness
 
         }
 
-        public void GetId(int? id)
+        public Locations GetId(int? id)
         {
-            _data.FindId(id);
+            var LocManagerDbId = _data.FindId(id);
+            return LocManagerDbId;
 
         }
 

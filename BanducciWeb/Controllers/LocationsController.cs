@@ -19,7 +19,8 @@ namespace BanducciWeb.Controllers
 
         public ActionResult LocationsHome()
         {
-            return View();  //todo
+            var LocControllerDbList = _locationsManager.List();
+            return View(LocControllerDbList);  //todo
         }
 
         public ActionResult Create()
@@ -27,9 +28,37 @@ namespace BanducciWeb.Controllers
             return View();
         }
 
-        public ActionResult Delete()
+        public ActionResult NullStoreView()
+        {
+            return View("Null");
+        }
+
+        public ActionResult ChangeSaved()
         {
             return View();
+        }
+
+        public ActionResult TryAgain()
+        {
+            return View();
+        }
+
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("NullStoreView");
+          
+            }
+
+            Locations locations = _locationsManager.GetId(id);
+
+            if (locations == null){
+
+                return RedirectToAction("NullStoreView");
+            }
+
+            return View(locations);
         }
 
         public ActionResult AddStore(Locations model)
@@ -39,21 +68,21 @@ namespace BanducciWeb.Controllers
                 _locationsManager.Create(model);
             }
 
-            return RedirectToAction("Create");
+            return RedirectToAction("ChangeSaved");
         }
 
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
-                return RedirectToAction("Create");  //todo change
+                return RedirectToAction("NullStoreView"); 
             }
 
             Locations locations = _locationsManager.GetId(id);
 
             if (locations == null)
             {
-                return RedirectToAction("Create");
+                return RedirectToAction("NullStoreView");
             }
 
             return View(locations);
@@ -67,17 +96,23 @@ namespace BanducciWeb.Controllers
                 _locationsManager.EditStore(model);
             }
 
-            return RedirectToAction("Create");
+            return RedirectToAction("ChangeSaved");
         }
 
-        public ActionResult DeleteStore(Locations model)
+        public ActionResult DeleteStore(Locations locations)
         {
             if (ModelState.IsValid)
             {
-                _locationsManager.Delete(model);
+                _locationsManager.Delete(locations);
+                return RedirectToAction("ChangeSaved");
             }
 
-            return RedirectToAction("Create");
+            else
+            {
+                return RedirectToAction("Try Again");
+            }
+
+            
         }
     }
 }

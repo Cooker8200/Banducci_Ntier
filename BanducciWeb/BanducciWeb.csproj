@@ -282,6 +282,9 @@
     <Content Include="Views\Locations\Delete.cshtml" />
     <Content Include="Views\Locations\Details.cshtml" />
     <Content Include="Views\Locations\Edit.cshtml" />
+    <Content Include="Views\Locations\Null.cshtml" />
+    <Content Include="Views\Locations\ChangeSaved.cshtml" />
+    <Content Include="Views\Locations\TryAgain.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

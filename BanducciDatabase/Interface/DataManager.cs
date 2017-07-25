@@ -13,9 +13,11 @@ namespace BanducciDatabase.Interface
         private DataContext db = new DataContext();
 
         //return list of stores
-        public void List()  //todo  fix issue
+        public Locations List()  //todo  fix issue
         {
-            db.Locations.ToList();
+            var DbList = db.Locations.ToList();
+            //return DbList;
+            return null;
         }
 
         //add location to database
@@ -33,9 +35,10 @@ namespace BanducciDatabase.Interface
         }
 
         //find location id to return viewmodel
-        public void FindId(int? id)
+        public Locations FindId(int? id)
         {
-            db.Locations.Find(id);
+            var dbitem = db.Locations.Find(id);
+            return dbitem;
 
         }
 
