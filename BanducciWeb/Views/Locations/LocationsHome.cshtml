@@ -1,4 +1,4 @@
-﻿@*@model IEnumerable<BanducciModels.Locations>;
+﻿@model IEnumerable<BanducciModels.Locations>
 @{
     ViewBag.Title = "LocationsHome";
 }
@@ -12,7 +12,7 @@
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
-    <table class="table" id="locationtable">
+    <table class="table" id="locationtable" style="background: white;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.storeid)
@@ -57,9 +57,9 @@
                     @Html.DisplayFor(modelItem => item.phone)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.storeid }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.storeid }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.storeid })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
                 </td>
             </tr>
         }
@@ -69,7 +69,7 @@
 
 else
 {
-    <table class="table" id="locationtable">
+    <table class="table" id="locationtable" style="background: white;">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.storeid)
@@ -113,11 +113,11 @@ else
                     @Html.DisplayFor(modelItem => item.phone)
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.storeid })
+                    @Html.ActionLink("Details", "Details", new { id = item.id })
                 </td>
             </tr>
         }
     </table>
 
-}*@
+}
 

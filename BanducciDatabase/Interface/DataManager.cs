@@ -13,11 +13,11 @@ namespace BanducciDatabase.Interface
         private DataContext db = new DataContext();
 
         //return list of stores
-        public Locations List()  //todo  fix issue
+        public IEnumerable<Locations> List()  //todo  fix issue
         {
             var DbList = db.Locations.ToList();
-            //return DbList;
-            return null;
+            return DbList;
+            //return null;
         }
 
         //add location to database
@@ -30,6 +30,18 @@ namespace BanducciDatabase.Interface
         //edit location
         public void Edit(Locations locations)
         {
+            //  !!!correct way to do when not given the database object!!!
+            //var dbitem = db.Locations.FirstOrDefault(x => x.id == locations.id);
+            //if (dbitem != null)
+            //{
+            //    dbitem.storeid = locations.storeid;
+            //    dbitem.address = locations.address;
+            //    dbitem.city = locations.city;
+            //    dbitem.state = locations.state;
+            //    dbitem.zipcode = locations.zipcode;
+            //    dbitem.phone = locations.phone;
+            //    db.SaveChanges();
+            //}
             db.Entry(locations).State = EntityState.Modified;
             db.SaveChanges();
         }
@@ -43,9 +55,10 @@ namespace BanducciDatabase.Interface
         }
 
         //delete location from database
-        public void DeleteStore(Locations locations)
+        public void DeleteStore(int? id)
         {
-            db.Locations.Remove(locations);
+            var dbitem = db.Locations.Find(id);
+            db.Locations.Remove(dbitem);
             db.SaveChanges();
         }
 

@@ -20,7 +20,7 @@ namespace BanducciWeb.Controllers
         public ActionResult LocationsHome()
         {
             var LocControllerDbList = _locationsManager.List();
-            return View(LocControllerDbList);  //todo
+            return View(LocControllerDbList);
         }
 
         public ActionResult Create()
@@ -41,6 +41,23 @@ namespace BanducciWeb.Controllers
         public ActionResult TryAgain()
         {
             return View();
+        }
+
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("NullStoreView");
+            }
+
+            Locations locations = _locationsManager.GetId(id);
+
+            if (locations == null)
+            {
+                return RedirectToAction("NullStoreView");
+            }
+
+            return View(locations);
         }
 
         public ActionResult Delete(int? id)
@@ -99,11 +116,11 @@ namespace BanducciWeb.Controllers
             return RedirectToAction("ChangeSaved");
         }
 
-        public ActionResult DeleteStore(Locations locations)
+        public ActionResult DeleteStore(int? id)  //todo  fix
         {
-            if (ModelState.IsValid)
+            if (id != null)
             {
-                _locationsManager.Delete(locations);
+                _locationsManager.Delete(id);
                 return RedirectToAction("ChangeSaved");
             }
 

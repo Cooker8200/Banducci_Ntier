@@ -5,12 +5,12 @@
 
 <h2 class="top_head">Contact Us</h2>
 
-<div id="contact">
+<div id="contact" style="background: white; border-radius:10px;">
 
     <div>
         @using (Html.BeginForm("SendContact", "Contact", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
         { @Html.AntiForgeryToken()
-            <h4>Send your comments.</h4>
+            <h3 style="margin-left: 5%; margin-top: 2%;">Send your comments.</h3>
             <hr />
             <div class="form-group">
                 @Html.LabelFor(m => m.name, new { @class = "col-md-2 control-label" })
@@ -42,8 +42,8 @@
 
     <hr />
 
-    <h3>Send a letter or call us.</h3>
-    <div>
+    <h3 style="margin-left: 5%;">Send a letter or call us.</h3>
+    <div style="margin-left: 5%;">
         <address>
             1001 Craig Road<br />
             Suite 485<br />
@@ -53,10 +53,6 @@
         </address>
     </div>
     <hr />
-    <h3>Employment Opproritunities</h3>
-    <p>We are always looking for great people to join our team.  Find ways to start a rewarding carrer.</p>
+    <h3 style="margin-left: 5%;">Employment Opproritunities</h3>
+    <p style="margin-left: 5%;">We are always looking for great people to join our team.  Find ways to start a rewarding carrer.</p>
 </div>
-
-<script>
-    document.GetElementById('body').style.background = 'none';
-</script>

@@ -18,7 +18,7 @@ namespace BanducciBusiness
 
         private BanducciDatabase.Interface.DataManager _data;
 
-        public Locations List()
+        public IEnumerable<Locations> List()
         {
             var LocManagerDbList = _data.List();
             return LocManagerDbList;
@@ -42,9 +42,9 @@ namespace BanducciBusiness
 
         }
 
-        public void Delete(Locations locations)
+        public void Delete(int? id)
         {
-            _data.DeleteStore(locations);
+            _data.DeleteStore(id);
         }
 
         
