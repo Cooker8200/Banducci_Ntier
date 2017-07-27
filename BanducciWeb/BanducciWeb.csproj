@@ -220,6 +220,23 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Main\background.jpg" />
+    <Content Include="Images\Main\currentevents.jpg" />
+    <Content Include="Images\Main\friesbackground.jpg" />
+    <Content Include="Images\Main\logo-apple.png" />
+    <Content Include="Images\Main\logo-google.png" />
+    <Content Include="Images\Main\mcdhistory.png" />
+    <Content Include="Images\Main\mcdlogo.jpg" />
+    <Content Include="Images\Main\mcdonalds.jpg" />
+    <Content Include="Images\Profile_Pictures\johnb.jpg" />
+    <Content Include="Images\Profile_Pictures\mcdlogo.jpg" />
+    <Content Include="Images\Promotions_Page\DM3 lineup.jpg" />
+    <Content Include="Images\Promotions_Page\DM3.jpg" />
+    <Content Include="Images\Promotions_Page\shamrock.jpg" />
+    <Content Include="Images\Promotions_Page\signaturecrafted.jpg" />
+    <Content Include="Images\Promotions_Page\siracha.jpg" />
+    <Content Include="Images\Promotions_Page\smurfs3.jpg" />
+    <Content Include="Images\Promotions_Page\steakburrito.jpg" />
     <Content Include="Scripts\BanducciScript.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -304,9 +321,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Main\" />
-    <Folder Include="Images\Profile_Pictures\" />
-    <Folder Include="Images\Promotions_Page\" />
     <Folder Include="Views\NewFolder1\" />
     <Folder Include="Views\NewFolder2\" />
   </ItemGroup>
