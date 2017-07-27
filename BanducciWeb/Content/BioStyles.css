@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.bio_image {
+    width: 15em;
+    height: 15em;
+    float: left;
+    margin-right: 2%;
+}
+
+.bio_head {
+    font-family: 2em;
+    margin-left: 5%;
+    color: black;
+    font-weight: bold;
+}
+
+.bio_main {
+    color: black;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+.bio_header_combine {
+    text-align: center;
+
+}

@@ -200,6 +200,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Banducci_Style.css" />
+    <Content Include="Content\BioStyles.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\SharedStyles.css" />
@@ -233,6 +235,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\ProfileScripts.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -285,6 +288,19 @@
     <Content Include="Views\Locations\Null.cshtml" />
     <Content Include="Views\Locations\ChangeSaved.cshtml" />
     <Content Include="Views\Locations\TryAgain.cshtml" />
+    <Content Include="Views\Management\ManageHome.cshtml" />
+    <Content Include="Views\Management\_TabletList.cshtml" />
+    <Content Include="Views\Home\_JonBanducciBio.cshtml" />
+    <Content Include="Views\Home\_MichelleBanducciBio.cshtml" />
+    <Content Include="Views\Home\_JimFuegnerBio.cshtml" />
+    <Content Include="Views\Home\_ThereseWunderlichBio.cshtml" />
+    <Content Include="Views\Home\_AngieBuscherBio.cshtml" />
+    <Content Include="Views\Home\BarbBio.cshtml" />
+    <Content Include="Views\Home\CarolBio.cshtml" />
+    <Content Include="Views\Home\JulieBio.cshtml" />
+    <Content Include="Views\Home\_JulieBio.cshtml" />
+    <Content Include="Views\Home\_BarbBio.cshtml" />
+    <Content Include="Views\Home\_CarolBio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -292,6 +308,7 @@
     <Folder Include="Images\Profile_Pictures\" />
     <Folder Include="Images\Promotions_Page\" />
     <Folder Include="Views\NewFolder1\" />
+    <Folder Include="Views\NewFolder2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

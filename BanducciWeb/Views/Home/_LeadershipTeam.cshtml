@@ -1,37 +1,32 @@
 ﻿<div id="leadership">
     <h3 class="about_info_header">Leadership Team</h3>
-    <div class="col-md-3">
-        <ul>
-            <li class="lead_title">Executives</li>
-            <li class="lead_team">Jon Banducci</li>
-            <li class="lead_team">Michelle Banducci</li>
-        </ul>
-        <ul>
-            <li class="lead_title">Operations Managment</li>
-            <li class="lead_team">Therese Wunderlich</li>
-            <li class="lead_team">Jim Fugner</li>
-            <li class="lead_team">Angie Buscher</li>
-        </ul>
-        <ul>
-            <li class="lead_title">Office Support</li>
-            <li class="lead_team">Julie Goddard</li>
-            <li class="lead_team">Barb Rosenfeld</li>
-            <li class="lead_team">Carol Dunlap</li>
-        </ul>
-    </div>
-    <div class="col-md-9">
+    <div>
+        <div class="col-md-2">
+            <ul>
+                <li class="lead_title">Executives</li>
+                <li class="lead_team" id="jonb_bio">Jon Banducci</li>
+                <li class="lead_team" id="michelleb_bio">Michelle Banducci</li>
+            </ul>
+            <ul>
+                <li class="lead_title">Operations Managment</li>
+                <li class="lead_team" id="therese_bio">Therese Wunderlich</li>
+                <li class="lead_team" id="jim_bio">Jim Fugner</li>
+                <li class="lead_team" id="angie_bio">Angie Buscher</li>
+            </ul>
+            <ul>
+                <li class="lead_title">Office Support</li>
+                <li class="lead_team" id="julie_bio">Julie Goddard</li>
+                <li class="lead_team" id="barb_bio">Barb Rosenfeld</li>
+                <li class="lead_team" id="carol_bio">Carol Dunlap</li>
+            </ul>
+        </div>
+
+        <div class="col-md-9" id="bio_area">
+
+        </div>
 
     </div>
-    @*<div class="panel panel-default">
-            <div class="panel-heading" id="jonb">Jon Banducci</div>
-            <div class="panel-body" id="jon_bio">
-                John was born and raised in California.  He met his wife, Michelle, while studying at hte University of XXX.  Etc...
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading" id="michelleb">Michelle Banducci</div>
-            <div class="panel-body" id="michelle_bio">
-                Michelle was born and raised in California.  She met her husband, John, while ??? yada yada yada
-            </div>
-        </div>*@
 </div>
+
+@Scripts.Render("~/Scripts/ProfileScripts.js")
+@Styles.Render("~/Content/BioStyles.css")
