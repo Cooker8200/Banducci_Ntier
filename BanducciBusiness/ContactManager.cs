@@ -23,8 +23,8 @@ namespace BanducciBusiness
         {
             var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
             var message = new MailMessage();
-            message.To.Add(new MailAddress("cooker8200@hotmail.com"));
-            message.From = new MailAddress("cooker8200@hotmail.com");
+            message.To.Add(new MailAddress(" "));
+            message.From = new MailAddress(" ");
             message.Subject = "Contact Message";
             message.Body = string.Format(body, model.name, model.email, model.message);
             message.IsBodyHtml = true;
@@ -33,8 +33,8 @@ namespace BanducciBusiness
             {
                 var credential = new NetworkCredential
                 {
-                    UserName = "Cooker8200@hotmail.com",  // replace with valid value
-                    Password = "MATTcook82189804"  // replace with valid value
+                    UserName = " ",  // replace with valid value
+                    Password = " "  // replace with valid value
                 };
                 smtp.Credentials = credential;
                 smtp.Host = "smtp-mail.outlook.com";
