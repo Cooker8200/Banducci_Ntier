@@ -16,15 +16,19 @@ namespace BanducciBusiness
         //{
         //    _sendForm = new EmailManager();
         //}
-
+        private static void SendCompelte()
+        {
+            
+        }
         //private EmailManager _sendForm;
+        
 
         public void ContactForm (ContactForm model)
         {
             var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
             var message = new MailMessage();
-            message.To.Add(new MailAddress(" "));
-            message.From = new MailAddress(" ");
+            message.To.Add(new MailAddress("mcd_developer@outlook.com"));
+            message.From = new MailAddress("mcd_developer@outlook.com");
             message.Subject = "Contact Message";
             message.Body = string.Format(body, model.name, model.email, model.message);
             message.IsBodyHtml = true;
@@ -33,8 +37,8 @@ namespace BanducciBusiness
             {
                 var credential = new NetworkCredential
                 {
-                    UserName = " ",  // replace with valid value
-                    Password = " "  // replace with valid value
+                    UserName = "mcd_developer@outlook.com",  // replace with valid value
+                    Password = "mcdDeveloper1234"  // replace with valid value
                 };
                 smtp.Credentials = credential;
                 smtp.Host = "smtp-mail.outlook.com";

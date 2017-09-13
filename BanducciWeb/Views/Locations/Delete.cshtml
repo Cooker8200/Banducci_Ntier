@@ -6,6 +6,9 @@
 <h2 class="top_head">Delete</h2>
 <hr />
 
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
 <div>
  
     @using (Html.BeginForm("DeleteStore", "Locations", FormMethod.Post, new { }))
@@ -101,6 +104,11 @@
 
 
 </div>
+}
+else
+{
+
+}
 
 <script>
     document.getElementById('body').style.background = 'none';

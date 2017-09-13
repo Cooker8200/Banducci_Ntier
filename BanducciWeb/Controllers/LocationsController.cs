@@ -116,7 +116,7 @@ namespace BanducciWeb.Controllers
             return RedirectToAction("ChangeSaved");
         }
 
-        public ActionResult DeleteStore(int? id)  //todo  fix
+        public ActionResult DeleteStore(int? id) 
         {
             if (id != null)
             {

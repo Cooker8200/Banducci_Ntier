@@ -26,7 +26,7 @@ namespace BanducciModels
             [Required]
             [Display(Name = "Zip Code")]
             public int zipcode { get; set; }
-            [Required]
+            //[Required]
             [Display(Name = "Phone Number")]
             public string phone { get; set; }
         

@@ -13,11 +13,10 @@ namespace BanducciDatabase.Interface
         private DataContext db = new DataContext();
 
         //return list of stores
-        public IEnumerable<Locations> List()  //todo  fix issue
+        public IEnumerable<Locations> List()  
         {
             var DbList = db.Locations.ToList();
             return DbList;
-            //return null;
         }
 
         //add location to database

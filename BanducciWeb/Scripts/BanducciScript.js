@@ -1,5 +1,4 @@
-﻿console.log("I'm running!");  //todo delete out line 1
-
+﻿
 $(document).ready(function () {
     //no longer using toggle...making ajax calls and partial views instead
     //$("#jonb").click(function () {
@@ -37,4 +36,21 @@ $(document).ready(function () {
             }
         })
     })
+
+    //nav bar
+    $(window).scroll(
+        {
+            previousTop: 0
+        },
+        function(){
+            var currentTop = $(window).scrollTop();
+            if (currentTop < this.previousTop){
+                $("#nav").show();
+            }
+            else {
+                $("#nav").hide();
+            }
+            this.previousTop = currentTop;
+        })
+            
 })

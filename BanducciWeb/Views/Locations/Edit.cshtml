@@ -5,7 +5,12 @@
 
 <h2 class="top_head">Edit</h2>
 <hr />
-@using (Html.BeginForm("EditStore", "Locations", FormMethod.Post))
+
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+
+using (Html.BeginForm("EditStore", "Locations", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     @Html.HiddenFor(model => model.id)
@@ -70,6 +75,12 @@
 <div>
     @Html.ActionLink("Back to List", "LocationsHome")
 </div>
+
+}
+else
+{
+
+}
 
 @*@section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
